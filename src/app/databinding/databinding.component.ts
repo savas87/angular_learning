@@ -9,6 +9,8 @@ export class DatabindingComponent {
   aString = "Ich bin ein String";
   aNumber = 100;
   attachClass = false;
+  name = "Savas";
+  attach = true;
   constructor() {
     setTimeout(() => {
       this.aNumber += 100;

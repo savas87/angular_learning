@@ -35,3 +35,8 @@
 <app-use-htmlelements>
   <p #paragraph>Irgendein text ist hier zu sehen</p>
 </app-use-htmlelements>
+<hr />
+<h4>LifeCycles</h4>
+<app-lifecycle [name]="name" *ngIf="attach"></app-lifecycle>
+<button (click)="name = 'Alparslan'">Clicks</button>
+<button (click)="attach = false">Zerstören</button>

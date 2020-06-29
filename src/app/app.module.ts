@@ -9,6 +9,7 @@ import { DatabindingComponent } from "./databinding/databinding.component";
 import { PropertyBindingComponent } from "./databinding/property-binding.component";
 import { EventBindingComponent } from "./databinding/event-binding.component";
 import { UseHTMLelementsComponent } from './use-htmlelements.component';
+import { LifecycleComponent } from './lifecycle/lifecycle.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { UseHTMLelementsComponent } from './use-htmlelements.component';
     PropertyBindingComponent,
     EventBindingComponent,
     UseHTMLelementsComponent,
+    LifecycleComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
