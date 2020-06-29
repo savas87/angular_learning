@@ -10,6 +10,22 @@
   <!--angular spezifisch mit property binding-->
   <input type="text" [value]="aNumber" />
 </div>
-<div [ngClass]="{ redBorder: true }">
+<!-- class und style directive-->
+<div
+  [ngClass]="{ redBorder: attachClass }"
+  [ngStyle]="{ 'background-color': 'blue' }"
+>
   Text
 </div>
+<!--"''" string übergeben [nameDate] argument der @Input()-->
+<app-property-binding [nameData]="'Selamunaleykum'"></app-property-binding>
+<hr />
+<h4>Event Binding</h4>
+<button (click)="onClick($event)">Click Me</button>
+<hr />
+<h4>Own Event Binding</h4>
+<!--clicked ist mein eigener event aString ist property von eltern component $event sind meine erzeugten daten-->
+<app-event-binding (clicked)="aString = $event"></app-event-binding>
+<hr />
+<h4>Two-Way-Binding</h4>
+<input type="text" [(ngModel)]="aString" />
