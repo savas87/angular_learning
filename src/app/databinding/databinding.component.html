@@ -1,0 +1,15 @@
+<h4>String Interpolation</h4>
+<p>{{ aString }}</p>
+<p>{{ aNumber }}</p>
+<hr />
+<h4>Property Binding</h4>
+<p [innerHTML]="aString"></p>
+<div>
+  <!--normaler input value ohne property und ohne angular spezifisch-->
+  <input type="text" value="{{ aNumber }}" />
+  <!--angular spezifisch mit property binding-->
+  <input type="text" [value]="aNumber" />
+</div>
+<div [ngClass]="{ redBorder: true }">
+  Text
+</div>
