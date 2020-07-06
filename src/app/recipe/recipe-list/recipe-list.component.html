@@ -1,0 +1,16 @@
+<div class="row">
+  <div class="col-12">
+    <div class="btn btn-success">Neues Rezept</div>
+  </div>
+</div>
+<hr />
+<div class="row">
+  <div class="col-12">
+    <ul class="list-group">
+      <app-recipe-item
+        [recipe]="recipe"
+        (recipeSelected)="onSelected($event)"
+      ></app-recipe-item>
+    </ul>
+  </div>
+</div>
