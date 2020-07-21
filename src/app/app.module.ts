@@ -8,9 +8,10 @@ import { OtherComponent } from "./other/other.component";
 import { DatabindingComponent } from "./databinding/databinding.component";
 import { PropertyBindingComponent } from "./databinding/property-binding.component";
 import { EventBindingComponent } from "./databinding/event-binding.component";
-import { UseHTMLelementsComponent } from './use-htmlelements.component';
-import { LifecycleComponent } from './lifecycle/lifecycle.component';
-import { DirectivesComponent } from './directives/directives.component';
+import { UseHTMLelementsComponent } from "./use-htmlelements.component";
+import { LifecycleComponent } from "./lifecycle/lifecycle.component";
+import { DirectivesComponent } from "./directives/directives.component";
+import { HighlightDirective } from "./directives/highlight.directive";
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { DirectivesComponent } from './directives/directives.component';
     UseHTMLelementsComponent,
     LifecycleComponent,
     DirectivesComponent,
+    HighlightDirective,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
