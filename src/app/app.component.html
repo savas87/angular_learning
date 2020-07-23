@@ -1,7 +1,18 @@
 <div class="container">
   <h4>LEARNING</h4>
   <p>{{ title }}</p>
-  <app-other>
-    <p>Daten aus app component {{ title }}</p>
-  </app-other>
+  <div class="row">
+    <app-other>
+      <p>Daten aus app component {{ title }}</p>
+    </app-other>
+  </div>
+  <div class="row">
+    <app-databinding></app-databinding>
+  </div>
+  <div class="row">
+    <app-directives></app-directives>
+  </div>
+  <div class="row">
+    <si-service></si-service>
+  </div>
 </div>

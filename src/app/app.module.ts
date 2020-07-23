@@ -12,6 +12,10 @@ import { UseHTMLelementsComponent } from "./use-htmlelements.component";
 import { LifecycleComponent } from "./lifecycle/lifecycle.component";
 import { DirectivesComponent } from "./directives/directives.component";
 import { HighlightDirective } from "./directives/highlight.directive";
+import { ServiceComponent } from "./service/service.component";
+import { CmpAComponent } from "./service/cmp-a.component";
+import { CmpBComponent } from "./service/cmp-b.component";
+import { LogService } from "./service/log.service";
 
 @NgModule({
   declarations: [
@@ -24,9 +28,12 @@ import { HighlightDirective } from "./directives/highlight.directive";
     LifecycleComponent,
     DirectivesComponent,
     HighlightDirective,
+    ServiceComponent,
+    CmpAComponent,
+    CmpBComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
-  providers: [],
+  providers: [LogService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

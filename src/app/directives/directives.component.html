@@ -1,30 +1,26 @@
-<div class="container">
-  <div class="row">
-    <h1>Directives</h1>
-    <h2>ngClass / ngStyle</h2>
-    <div [ngStyle]="{ 'background-color': color }"></div>
-    <hr />
-    <h2>Own Directive</h2>
-    <p appHighlight [defaultColor]="'blue'">
-      Ich bin durch eine eigene Directive hervorgehoben
-    </p>
-    <hr />
-    <h2>Structural Directive</h2>
-    <div *ngIf="show">Nicht mehr zu sehen</div>
-    <button (click)="switch()">Switch</button>
-    <hr />
-    <h2>*ngFor</h2>
-    <ul>
-      <li *ngFor="let element of elemente; let i = index">
-        {{ element }} - (indxe:{{ i }})
-      </li>
-    </ul>
-    <hr />
-    <h2>ngSwitch</h2>
-    <div [ngSwitch]="value">
-      <p *ngSwitchCase="10">10</p>
-      <p *ngSwitchCase="100">100</p>
-      <p *ngSwitchDefault>Irgendwas</p>
-    </div>
-  </div>
+<h1>Directives</h1>
+<h2>ngClass / ngStyle</h2>
+<div [ngStyle]="{ 'background-color': color }"></div>
+<hr />
+<h2>Own Directive</h2>
+<p appHighlight [defaultColor]="'blue'">
+  Ich bin durch eine eigene Directive hervorgehoben
+</p>
+<hr />
+<h2>Structural Directive</h2>
+<div *ngIf="show">Nicht mehr zu sehen</div>
+<button (click)="switch()">Switch</button>
+<hr />
+<h2>*ngFor</h2>
+<ul>
+  <li *ngFor="let element of elemente; let i = index">
+    {{ element }} - (indxe:{{ i }})
+  </li>
+</ul>
+<hr />
+<h2>ngSwitch</h2>
+<div [ngSwitch]="value">
+  <p *ngSwitchCase="10">10</p>
+  <p *ngSwitchCase="100">100</p>
+  <p *ngSwitchDefault>Irgendwas</p>
 </div>
